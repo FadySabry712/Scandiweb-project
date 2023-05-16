@@ -1,0 +1,226 @@
+:root{
+    --primary-color: #333;
+--secondary-color: #444;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+hr.rounded {
+border-top: 6px solid #bbb;
+ border-radius: 10px;
+ grid-column: span 2;
+ 
+}
+body{
+font-family: "myriad-pro", sans-serif;;
+line-height: 1.6;
+color: var(--primary-color);
+font-size: 1.1rem;
+}
+
+ul {
+list-style: none;
+}
+
+h1, h2, h3, h4 {
+line-height: 1.3;
+}
+
+a {
+color: var(--secondary-color);
+text-decoration: none;
+
+}
+
+
+
+/* Utilites */
+.button-1 {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+  
+  .button-1:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+  
+  .button-1:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+  }
+  
+  .button-1:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+  }
+  
+  .button-1:focus {
+    outline: 1px transparent;
+  }
+  
+  .button-1:before {
+    display: none;
+  }
+  
+  .button-1:-webkit-details-marker {
+    display: none;
+  }
+  
+  hr.rounded {
+     border-top: 6px solid #bbb;
+      border-radius: 10px;
+      grid-column: span 2;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+
+
+
+
+.logo {
+    padding-left: 1rem;
+}
+
+.container { 
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding-top:0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar .nav-ul{
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    padding: 0 2rem;
+    justify-content: center;
+    align-content: center;
+    
+} 
+
+
+.container-main {
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+ 
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 2rem;
+
+} 
+#box-1, #box-2, #box-3, #box-4, #box-5, #box-6{
+    border: 3px solid black;
+    padding-bottom: 4rem;
+} 
+
+.products input{
+    display: block;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem; 
+    
+}
+
+#footer-contnet {
+
+    text-align: center;
+}
+
+
+#Name, #SKU, #Price{
+    margin-left: 0.5rem;
+    border-spacing: 10rem;
+   
+}
+
+
+#productType {
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+#productType{
+    margin-top: 30px;
+}
+
+#Book, #DVD, #Furniture{
+    box-sizing: content-box;
+    width: 35%;
+    height: 1.5rem;
+}
+
+#inputs{
+    display: block;
+}
+
+.delete-checkbox{
+    display: block;
+}
+#product_form{
+    display: block;
+}
+
+
+/*
+input:optional {
+    border-color: gray;
+  }
+  
+  input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+  }
+*/
+
+
+.error {
+    font-size: smaller;
+    color: red;
+}  
